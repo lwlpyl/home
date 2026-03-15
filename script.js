@@ -38,7 +38,7 @@ const projects = [
 // ==================== DOM 元素 ====================
 const navToggle = document.getElementById("navToggle");
 const navMenu = document.getElementById("navMenu");
-const projectGrid = document.getElementById("projectGrid");
+const projectList = document.getElementById("projectList");
 
 // ==================== 导航功能 ====================
 navToggle.addEventListener("click", () => {
@@ -53,26 +53,21 @@ navMenu.querySelectorAll("a").forEach((link) => {
 
 // ==================== 项目渲染 ====================
 function renderProjects() {
-  projectGrid.innerHTML = projects
-    .map(
-      (project) => `
-    <div class="project-card">
-      <div class="project-image">${project.emoji}</div>
-      <div class="project-info">
-        <h3 class="project-name">${project.name}</h3>
-        <p class="project-desc">${project.description}</p>
-        <div class="project-tags">
-          ${project.tags.map((tag) => `<span class="project-tag">${tag}</span>`).join("")}
-        </div>
-        <div class="project-links">
-          ${project.link !== "#" ? `<a href="${project.link}" class="project-link" target="_blank">查看项目 →</a>` : ""}
-          ${project.github !== "#" ? `<a href="${project.github}" class="project-link" target="_blank">GitHub →</a>` : ""}
-        </div>
-      </div>
-    </div>
-  `,
-    )
-    .join("");
+  projectList.innerHTML = `
+    <ul class="project-list-items">
+      ${projects
+        .map(
+          (project) => `
+        <li class="project-list-item">
+          <span class="project-emoji">${project.emoji}</span>
+          <span class="project-name">${project.name}</span>
+          <a href="${project.github}" class="project-link" target="_blank" rel="noopener">GitHub →</a>
+        </li>
+      `,
+        )
+        .join("")}
+    </ul>
+  `;
 }
 
 // ==================== 平滑滚动 ====================
