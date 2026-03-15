@@ -299,6 +299,11 @@ body {
   font-weight: 500;
 }
 
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
 .project-link {
   color: var(--primary-blue);
   text-decoration: none;

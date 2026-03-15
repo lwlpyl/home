@@ -12,27 +12,32 @@ const projects = [
   {
     name: "爱心树",
     emoji: "❤️",
+    website: "https://love.wenlong.site",
     github: "https://github.com/lwlpyl/love",
-  },
-  {
-    name: "李释佛器",
-    emoji: "🙏",
-    github: "https://github.com/lwlpyl/dxlsfq",
   },
   {
     name: "圣诞树",
     emoji: "🎄",
+    website: "https://tree.wenlong.site",
     github: "https://github.com/lwlpyl/tree",
+  },
+  {
+    name: "旋转相册",
+    emoji: "📸",
+    website: "https://photo.wenlong.site",
+    github: "https://github.com/lwlpyl/photo",
   },
   {
     name: "AI 塔罗牌",
     emoji: "🔮",
+    website: "https://tarot.wenlong.site",
     github: "https://github.com/lwlpyl/ai-tarot",
   },
   {
-    name: "照片集",
-    emoji: "📸",
-    github: "https://github.com/lwlpyl/photo",
+    name: "李释佛器",
+    emoji: "🙏",
+    website: "https://dxlsfq.wenlong.site",
+    github: "https://github.com/lwlpyl/dxlsfq",
   },
 ];
 
@@ -62,7 +67,10 @@ function renderProjects() {
         <li class="project-list-item">
           <span class="project-emoji">${project.emoji}</span>
           <span class="project-name">${project.name}</span>
-          <a href="${project.github}" class="project-link" target="_blank" rel="noopener">GitHub →</a>
+          <div class="project-links">
+            <a href="${project.website}" class="project-link" target="_blank" rel="noopener">网站 →</a>
+            <a href="${project.github}" class="project-link" target="_blank" rel="noopener">GitHub →</a>
+          </div>
         </li>
       `,
         )
