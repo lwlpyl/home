@@ -373,6 +373,13 @@ body {
   color: var(--text-light);
 }
 
+.contact-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
 /* 页脚 */
 .footer {
   background: var(--primary-dark);

@@ -18,14 +18,6 @@ const projects = [
     github: "https://github.com/lwlpyl/dxlsfq",
   },
   {
-    name: "个人博客",
-    emoji: "📝",
-    description: "个人介绍、项目分享、技术博客",
-    tags: ["HTML", "CSS", "JavaScript"],
-    link: "https://lwlpyl.github.io/home/",
-    github: "https://github.com/lwlpyl/home",
-  },
-  {
     name: "AI 塔罗牌",
     emoji: "🔮",
     description: "基于 AI 的在线塔罗牌占卜应用",

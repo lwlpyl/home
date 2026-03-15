@@ -44,7 +44,7 @@ const siteConfig = {
   name: "李文龙",
   email: "your@email.com",
   github: "https://github.com/yourusername",
-  location: "你的城市"
+  location: "你的城市",
 };
 ```
 
@@ -60,8 +60,8 @@ const projects = [
     description: "项目描述",
     tags: ["HTML", "CSS", "JavaScript"],
     link: "https://your-project.com",
-    github: "https://github.com/yourusername/project"
-  }
+    github: "https://github.com/yourusername/project",
+  },
 ];
 ```
 
@@ -98,11 +98,11 @@ https://lwlpyl.github.io/home/
 
 ## 配色方案
 
-| 颜色 | 值 | 用途 |
-|------|-----|------|
-| 主蓝色 | `#2563eb` | 主色调 |
-| 深蓝色 | `#1e293b` | 深色背景 |
-| 浅蓝色 | `#3b82f6` | 强调色 |
+| 颜色     | 值        | 用途     |
+| -------- | --------- | -------- |
+| 主蓝色   | `#2563eb` | 主色调   |
+| 深蓝色   | `#1e293b` | 深色背景 |
+| 浅蓝色   | `#3b82f6` | 强调色   |
 | 文字深色 | `#334155` | 主要文字 |
 | 文字浅色 | `#64748b` | 次要文字 |
 
