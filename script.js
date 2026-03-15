@@ -10,27 +10,28 @@ const siteConfig = {
 // 项目数据
 const projects = [
   {
+    name: "爱心树",
+    emoji: "❤️",
+    github: "https://github.com/lwlpyl/love",
+  },
+  {
     name: "李释佛器",
-    emoji: "🪷",
-    description: "佛像法器产品展示网站，纯前端响应式设计",
-    tags: ["HTML", "CSS", "JavaScript"],
-    link: "https://lwlpyl.github.io/dxlsfq/",
+    emoji: "🙏",
     github: "https://github.com/lwlpyl/dxlsfq",
+  },
+  {
+    name: "圣诞树",
+    emoji: "🎄",
+    github: "https://github.com/lwlpyl/tree",
   },
   {
     name: "AI 塔罗牌",
     emoji: "🔮",
-    description: "基于 AI 的在线塔罗牌占卜应用",
-    tags: ["AI", "Web", "Interactive"],
-    link: "https://github.com/lwlpyl/ai-tarot",
     github: "https://github.com/lwlpyl/ai-tarot",
   },
   {
     name: "照片集",
     emoji: "📸",
-    description: "个人照片展示画廊",
-    tags: ["Gallery", "Responsive"],
-    link: "https://github.com/lwlpyl/photo",
     github: "https://github.com/lwlpyl/photo",
   },
 ];
